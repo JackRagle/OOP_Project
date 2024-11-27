@@ -6,7 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 
-public class Format {
+public class Format{
 
 	@FXML private HBox results;
 	@FXML private Label startnum;
@@ -14,6 +14,7 @@ public class Format {
 	@FXML private Label endnum;
 	@FXML private Label endunit;
 	@FXML private TextField numunits;
+	
 	double amount;
 	
     public void handleMITOKMButtonAction(ActionEvent event) {
