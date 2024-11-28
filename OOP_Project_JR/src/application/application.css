@@ -1,5 +1,5 @@
 #MainMenu {
-	-fx-background-image: url("MainMenuBG.png");
+	-fx-background-image: url("MainMenu.png");
 }
 .button {
 	-fx-background-color: green;
