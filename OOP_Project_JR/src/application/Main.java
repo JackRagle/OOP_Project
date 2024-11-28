@@ -9,10 +9,12 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception{
-		Parent root = FXMLLoader.load(getClass().getResource("Format.fxml"));
-		Scene scene = new Scene(root, 750, 500);
-		primaryStage.setTitle("Unit Converter");
-		primaryStage.setScene(scene);
+		Parent root = FXMLLoader.load(getClass().getResource("MainMenu.fxml"));
+		Scene mainMenu = new Scene(root, 800, 500);
+		String css = this.getClass().getResource("application.css").toExternalForm();
+		mainMenu.getStylesheets().add(css);
+		primaryStage.setTitle("Main Menu");
+		primaryStage.setScene(mainMenu);
 		primaryStage.show();
 	}
 	
