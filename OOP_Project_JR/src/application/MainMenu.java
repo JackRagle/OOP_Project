@@ -30,8 +30,17 @@ public class MainMenu {
 		
     }
 	
-	@FXML protected void solitareStartBtn(ActionEvent event) {
+	@FXML protected void solitaireStartBtn(ActionEvent event) throws IOException {
     	
+		Parent root = FXMLLoader.load(getClass().getResource("Solitaire.fxml"));
+		Scene Solitaire = new Scene(root, 800, 500);
+		String css = this.getClass().getResource("application.css").toExternalForm();
+		Solitaire.getStylesheets().add(css);
+		Stage window =  (Stage)(((Node) event.getSource()).getScene().getWindow());
+		window.setScene(Solitaire);
+		window.setTitle("Solitaire");
+		window.show();
+		
     }
 	
 }

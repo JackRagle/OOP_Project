@@ -14,8 +14,8 @@
 		<Button text="Play BlackJack" layoutX="100" layoutY="370" prefWidth="200" prefHeight="100" fx:id="BJMenuBtn"
         	onAction="#blackjackStartBtn"/>
         	
-        <Button text="Play Solitare" layoutX="500" layoutY="370" prefWidth="200" prefHeight="100"
-        	onAction="#solitareStartBtn"/>
+        <Button text="Play Solitaire" layoutX="500" layoutY="370" prefWidth="200" prefHeight="100"
+        	onAction="#solitaireStartBtn"/>
 	
 	</children>
 </AnchorPane>
