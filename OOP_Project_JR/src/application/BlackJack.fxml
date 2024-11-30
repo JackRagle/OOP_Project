@@ -10,7 +10,52 @@
 			xmlns:fx="http://javafx.com/fxml" styleClass="root">
 	<children>
 	
+	<Button text="Main Menu" fx:id="BJMMBtn" layoutX="700" layoutY="0" prefWidth="100" prefHeight="25"
+		onAction="#BJMMBtn"/>
+	<Button text="Rules" fx:id="BJRulesBtn" layoutX="700" layoutY="35" prefWidth="100" prefHeight="25"
+		onAction="#BJRulesBtn"/>
+	<Button text="Stand" fx:id="StandBtn" layoutX="250" layoutY="225" prefWidth="100" prefHeight="50"
+		onAction="#StandBtn"/>
+	<Button text="Deal" fx:id="DealBtn" layoutX="355" layoutY="225" prefWidth="100" prefHeight="50"
+		onAction="#DealBtn"/>
+	<Button text="Hit" fx:id="HitBtn" layoutX="460" layoutY="225" prefWidth="100" prefHeight="50"
+		onAction="#HitBtn"/>
+	<Label fx:id="CardPHOne" layoutX="325" layoutY="300" prefWidth="80" prefHeight="130"/>
+	<Label fx:id="CardPHTwo" layoutX="425" layoutY="300" prefWidth="80" prefHeight="130"/>
+	<Label fx:id="CardPHThree" layoutX="325" layoutY="75" prefWidth="80" prefHeight="130"/>
+	<Label fx:id="CardPHFour" layoutX="425" layoutY="75" prefWidth="80" prefHeight="130"/>
+	<Label text="Dealer's Score:" layoutX="125" layoutY="125"/>
+	<Label fx:id="DealerScore" text="0" layoutX="235" layoutY="125"/>
+	<Label text="Player's Score:" layoutX="575" layoutY="350"/>
+	<Label fx:id="PlayerScore" text="0" layoutX="685" layoutY="350"/>
 	
+	<AnchorPane fx:id="BJRulesSheet" prefWidth="800" prefHeight="500" layoutX="800">
+		<children>
+	
+		<Button text="X" layoutX="750" layoutY="15"
+			onAction="#BJRulesCloseBtn"/>
+		<Label fx:id="BJRulesTitle" text="BlackJack Rules:" layoutX="325" layoutY="25"/>
+		<Label text="--To begin the game, press Deal. The dealer will then deal two cards to the player" layoutX="50" layoutY="75"/>
+		<Label text="  as well as two cards to themself, one of which is face down." layoutX="50" layoutY="100"/>
+		<Label text="--The goal of the game is to get a higher combined total than the dealer whithout going over 21." layoutX="50" layoutY="125"/>
+		<Label text="  The total is determined by the sum of the numbers on the cards that you have." layoutX="50" layoutY="150"/>
+		<Label text="  All face cards count as 10 and the ace cards can either be 11 or 1." layoutX="50" layoutY="175"/>
+		<Label text="--After the deal the player may either 'Hit' which will draw the player another card," layoutX="50" layoutY="200"/>
+		<Label text="  or 'Stay' which will end the player's turn." layoutX="50" layoutY="225"/>
+		<Label text="--The dealer will then flip over their second card and will have the chance to hit or stay." layoutX="50" layoutY="250"/>
+		<Label text="--If the player goes over 21 they automatically lose. Same goes for the dealer." layoutX="50" layoutY="275"/>
+	
+		</children>
+	</AnchorPane>
+	
+	<AnchorPane fx:id="BJGameResult" prefWidth="800" prefHeight="500" layoutX="800">
+		<children>
+	
+		<Button text="X" layoutX="750" layoutY="15"
+			onAction="#BJRulesCloseBtn"/>
+	
+		</children>
+	</AnchorPane>
 	
 	</children>
 </AnchorPane>
