@@ -5,6 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 
 <AnchorPane fx:controller="application.Solitaire" fx:id="SolitaireMenu"
 			xmlns:fx="http://javafx.com/fxml" styleClass="root">
@@ -14,6 +15,39 @@
 		onAction="#SMMBtn"/>
 	<Button text="Rules" fx:id="SRulesBtn" layoutX="700" layoutY="35" prefWidth="100" prefHeight="25"
 		onAction="#SRulesBtn"/>
+	<Button text="Start Game" fx:id="StartBtn" layoutX="350" layoutY="250" prefWidth="100" prefHeight="50"
+		onAction="#StartBtn"/>
+	<Button text="Discard" fx:id="DiscardBtn" layoutX="800" layoutY="350" prefWidth="100" prefHeight="50"
+		onAction="#DiscardBtn"/>
+	<ImageView fx:id="PlaySpotOne" layoutX="100" layoutY="25"/>
+	<Button text="" fx:id="PlaySpotOneBtn" layoutX="100" layoutY="25" prefWidth="80" prefHeight="130" opacity="0"
+		onAction="#PlaySpotOneBtn"/>
+	<ImageView fx:id="PlaySpotTwo" layoutX="250" layoutY="25"/>
+	<Button text="" fx:id="PlaySpotTwoBtn" layoutX="250" layoutY="25" prefWidth="80" prefHeight="130" opacity="0"
+		onAction="#PlaySpotTwoBtn"/>
+	<ImageView fx:id="PlaySpotThree" layoutX="400" layoutY="25"/>
+	<Button text="" fx:id="PlaySpotThreeBtn" layoutX="400" layoutY="25" prefWidth="80" prefHeight="130" opacity="0"
+		onAction="#PlaySpotThreeBtn"/>
+	<ImageView fx:id="PlaySpotFour" layoutX="550" layoutY="25"/>
+	<Button text="" fx:id="PlaySpotFourBtn" layoutX="550" layoutY="25" prefWidth="80" prefHeight="130" opacity="0"
+		onAction="#PlaySpotFourBtn"/>
+	
+	<ImageView fx:id="HandSpotOne" layoutX="100" layoutY="350"/>
+	<Button text="" fx:id="HandSpotOneBtn" layoutX="100" layoutY="350" prefWidth="80" prefHeight="130" opacity="0"
+		onAction="#HandSpotOneBtn"/>
+	<ImageView fx:id="HandSpotTwo" layoutX="250" layoutY="350"/>
+	<Button text="" fx:id="HandSpotTwoBtn" layoutX="250" layoutY="350" prefWidth="80" prefHeight="130" opacity="0"
+		onAction="#HandSpotTwoBtn"/>
+	<ImageView fx:id="HandSpotThree" layoutX="400" layoutY="350"/>
+	<Button text="" fx:id="HandSpotThreeBtn" layoutX="400" layoutY="350" prefWidth="80" prefHeight="130" opacity="0"
+		onAction="#HandSpotThreeBtn"/>
+	<ImageView fx:id="HandSpotFour" layoutX="550" layoutY="350"/>
+	<Button text="" fx:id="HandSpotFourBtn" layoutX="550" layoutY="350" prefWidth="80" prefHeight="130" opacity="0"
+		onAction="#HandSpotFourBtn"/>
+		
+	<ImageView fx:id="SelectedSpot" layoutX="325" layoutY="200"/>
+	<Button text="" fx:id="SelectedSpotBtn" layoutX="800" layoutY="200" prefWidth="80" prefHeight="130" opacity="0"
+		onAction="#SelectedSpotBtn"/>
 		
 	<AnchorPane fx:id="SRulesSheet" prefWidth="800" prefHeight="500" layoutX="800">
 		<children>
@@ -30,6 +64,17 @@
 		<Label text="  or 'Stay' which will end the player's turn." layoutX="50" layoutY="225"/>
 		<Label text="--The dealer will then flip over their second card and will have the chance to hit or stay." layoutX="50" layoutY="250"/>
 		<Label text="--If the player goes over 21 they automatically lose. Same goes for the dealer." layoutX="50" layoutY="275"/>
+	
+		</children>
+	</AnchorPane>
+	
+	<AnchorPane fx:id="SGameResult" prefWidth="800" prefHeight="200" layoutY="500">
+		<children>
+	
+		<Button text="Play Again" layoutX="300" layoutY="60" prefWidth="200" prefHeight="75"
+			onAction="#PlayAgain"/>
+		<Label fx:id="GameResultOne" text="You" layoutX="100" layoutY="50"/>
+		<Label fx:id="GameResultTwo" text="blank" layoutX="600" layoutY="50"/>
 	
 		</children>
 	</AnchorPane>
