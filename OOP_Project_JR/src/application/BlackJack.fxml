@@ -5,9 +5,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 
 <AnchorPane fx:controller="application.BlackJack" fx:id="BJMenu"
-			xmlns:fx="http://javafx.com/fxml" styleClass="root">
+			xmlns:fx="http://javafx.com/fxml/1" styleClass="root">
 	<children>
 	
 	<Button text="Main Menu" fx:id="BJMMBtn" layoutX="700" layoutY="0" prefWidth="100" prefHeight="25"
@@ -28,6 +29,15 @@
 	<Label fx:id="DealerScore" text="0" layoutX="235" layoutY="125"/>
 	<Label text="Player's Score:" layoutX="575" layoutY="350"/>
 	<Label fx:id="PlayerScore" text="0" layoutX="685" layoutY="350"/>
+	<ImageView fx:id="CardOne"/>
+	<ImageView fx:id="CardTwo"/>
+	<ImageView fx:id="CardThree"/>
+	<ImageView fx:id="CardFour"/>
+	<ImageView fx:id="CardFive"/>
+	<ImageView fx:id="CardSix"/>
+	<ImageView fx:id="CardSeven"/>
+	<ImageView fx:id="CardEight"/>
+	<ImageView fx:id="CardNine"/>
 	
 	<AnchorPane fx:id="BJRulesSheet" prefWidth="800" prefHeight="500" layoutX="800">
 		<children>
@@ -48,14 +58,17 @@
 		</children>
 	</AnchorPane>
 	
-	<AnchorPane fx:id="BJGameResult" prefWidth="800" prefHeight="500" layoutX="800">
+	<AnchorPane fx:id="BJGameResult" prefWidth="800" prefHeight="95" layoutY="500">
 		<children>
 	
-		<Button text="X" layoutX="750" layoutY="15"
-			onAction="#BJRulesCloseBtn"/>
+		<Button text="Play Again" layoutX="300" layoutY="10" prefWidth="200" prefHeight="75"
+			onAction="#PlayAgain"/>
+		<Label fx:id="GameResultOne" text="You" layoutX="100" layoutY="10"/>
+		<Label fx:id="GameResultTwo" text="blank" layoutX="600" layoutY="10"/>
 	
 		</children>
 	</AnchorPane>
+	
 	
 	</children>
 </AnchorPane>

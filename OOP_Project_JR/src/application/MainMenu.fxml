@@ -6,7 +6,7 @@
 <?import javafx.scene.text.*?>
 
 <AnchorPane fx:controller="application.MainMenu" fx:id="MainMenu"
-			xmlns:fx="http://javafx.com/fxml" styleClass="root">
+			xmlns:fx="http://javafx.com/javafx/1" styleClass="root">
 			<padding></padding>
 			
 	<children>
