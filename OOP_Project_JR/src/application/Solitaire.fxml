@@ -55,15 +55,15 @@
 		<Button text="X" layoutX="750" layoutY="15"
 			onAction="#SRulesCloseBtn"/>
 		<Label fx:id="SRulesTitle" text="Solitaire Rules:" layoutX="325" layoutY="25"/>
-		<Label text="--To begin the game, press Deal. The dealer will then deal two cards to the player" layoutX="50" layoutY="75"/>
-		<Label text="  as well as two cards to themself, one of which is face down." layoutX="50" layoutY="100"/>
-		<Label text="--The goal of the game is to get a higher combined total than the dealer whithout going over 21." layoutX="50" layoutY="125"/>
-		<Label text="  The total is determined by the sum of the numbers on the cards that you have." layoutX="50" layoutY="150"/>
-		<Label text="  All face cards count as 10 and the ace cards can either be 11 or 1." layoutX="50" layoutY="175"/>
-		<Label text="--After the deal the player may either 'Hit' which will draw the player another card," layoutX="50" layoutY="200"/>
-		<Label text="  or 'Stay' which will end the player's turn." layoutX="50" layoutY="225"/>
-		<Label text="--The dealer will then flip over their second card and will have the chance to hit or stay." layoutX="50" layoutY="250"/>
-		<Label text="--If the player goes over 21 they automatically lose. Same goes for the dealer." layoutX="50" layoutY="275"/>
+		<Label text="--To begin the game, press Start Game. The player will begin with the four kings at the top." layoutX="50" layoutY="75"/>
+		<Label text="  The player will also draw four cards that will appear at the bottom." layoutX="50" layoutY="100"/>
+		<Label text="--The goal of the game is to place all of the cards from king to ace in order for each suit" layoutX="50" layoutY="125"/>
+		<Label text="--To place a card, the player must click the card that they want to place." layoutX="50" layoutY="150"/>
+		<Label text="  This will move the card into the play area. The player must then click which pile" layoutX="50" layoutY="175"/>
+		<Label text="  that they would like to move the card to. If it is the wrong card, it will not move the card." layoutX="50" layoutY="200"/>
+		<Label text="--If the player does not have any cards to play they will need to click the discard button." layoutX="50" layoutY="225"/>
+		<Label text="  This will draw four new cards. This can be done as many times as needed." layoutX="50" layoutY="250"/>
+		<Label text="--Once all four aces have been placed, the player has won the game." layoutX="50" layoutY="275"/>
 	
 		</children>
 	</AnchorPane>
