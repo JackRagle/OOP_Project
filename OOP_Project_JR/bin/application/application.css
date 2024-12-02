@@ -1,0 +1,56 @@
+#MainMenu {
+	-fx-background-image: url("MainMenu.png");
+}
+#BJMenu {
+	-fx-background-image: url("GameBG.png");
+}
+#SolitaireMenu {
+	-fx-background-image: url("GameBG.png");
+}
+#CardPHOne {
+	-fx-background-image: url("CardPH.png");
+}
+#CardPHTwo {
+	-fx-background-image: url("CardPH.png");
+}
+#CardPHThree {
+	-fx-background-image: url("CardPH.png");
+}
+#CardPHFour {
+	-fx-background-image: url("CardPH.png");
+}
+#BJRulesSheet {
+	-fx-background-color: white;
+}
+#BJRulesTitle {
+	-fx-font-size: 20;
+}
+#SRulesSheet {
+	-fx-background-color: white;
+}
+#SRulesTitle {
+	-fx-font-size: 20;
+}
+#BJGameResult {
+	-fx-background-color: black;
+}
+#SGameResult {
+	-fx-background-color: black;
+}
+#GameResultOne {
+	-fx-font-size: 50;
+	-fx-text-fill: white;
+}
+#GameResultTwo {
+	-fx-font-size: 50;
+	-fx-text-fill: white;
+}
+.button {
+	-fx-background-color: green;
+	-fx-border-color: black;
+	-fx-border-width: 5;
+	-fx-color: black;
+}
+.label {
+	-fx-font-size: 16;
+}
